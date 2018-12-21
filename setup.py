@@ -18,6 +18,7 @@ setup(
     install_requires=[
         'uvloop',
         'aioredis',
+        'click',
     ],
     classifiers=[
         'Development Status :: 3 - Beta',
@@ -32,7 +33,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'wlconnector = scripts.wlconnector_script:main',
+            'wlconnector = scripts.wlconnector_script:cli',
         ]
     },
     test_suite='nose.collector',
