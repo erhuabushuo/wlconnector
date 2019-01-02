@@ -13,7 +13,7 @@ from wlconnector.server import Server
 def cli(config_path):
     """旺龙TCP通信服务器"""
     cfg = configparser.ConfigParser()
-    cfg.read(cfg_file_path)
+    cfg.read(config_path)
 
     is_debug = cfg.getboolean('general', 'debug')
 
